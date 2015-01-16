@@ -59,9 +59,9 @@ namespace LibInfluxDB.Net.Tests
         {
             string dbName = GetNewDbName();
             InfluxDbApiCreateResponse response = await _db.CreateDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             InfluxDbApiDeleteResponse deleteResponse = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             response.Success.Should().BeTrue();
             deleteResponse.Success.Should().BeTrue();
         }
@@ -76,9 +76,9 @@ namespace LibInfluxDB.Net.Tests
                 Name = dbName
             });
 
-
+            Thread.Sleep(100);
             InfluxDbApiDeleteResponse deleteResponse = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             response.Success.Should().BeTrue();
             deleteResponse.Success.Should().BeTrue();
         }
@@ -88,11 +88,11 @@ namespace LibInfluxDB.Net.Tests
         {
             string dbName = GetNewDbName();
             InfluxDbApiCreateResponse createResponse = await _db.CreateDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             createResponse.Success.Should().BeTrue();
-
+            Thread.Sleep(100);
             InfluxDbApiDeleteResponse response = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             response.Success.Should().BeTrue();
         }
 
@@ -104,10 +104,10 @@ namespace LibInfluxDB.Net.Tests
             createResponse.Success.Should().BeTrue();
 
             List<Database> databases = await _db.DescribeDatabasesAsync();
-
+            Thread.Sleep(100);
 
             InfluxDbApiDeleteResponse deleteResponse = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             databases.Should().NotBeNullOrEmpty();
             databases.Where(database => database.Name.Equals(dbName)).Should().NotBeNull();
             deleteResponse.Success.Should().BeTrue();
@@ -127,19 +127,19 @@ namespace LibInfluxDB.Net.Tests
             string dbName = GetNewDbName();
 
             InfluxDbApiCreateResponse createResponse = await _db.CreateDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             const string TMP_SERIE_NAME = "testSeries";
             Serie serie = new Serie.Builder(TMP_SERIE_NAME)
                 .Columns("value1", "value2")
                 .Values(DateTime.Now.Millisecond, 5)
                 .Build();
             InfluxDbApiResponse writeResponse = await _db.WriteAsync(dbName, TimeUnit.Milliseconds, serie);
-
+            Thread.Sleep(100);
             List<Serie> series =
                 await _db.QueryAsync(dbName, string.Format("select * from {0}", TMP_SERIE_NAME), TimeUnit.Milliseconds);
-
+            Thread.Sleep(100);
             InfluxDbApiDeleteResponse deleteResponse = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             series.Should().NotBeNull();
             series.Count.Should().Be(1);
 
@@ -154,15 +154,15 @@ namespace LibInfluxDB.Net.Tests
             string dbName = GetNewDbName();
 
             InfluxDbApiCreateResponse createResponse = await _db.CreateDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             Serie serie = new Serie.Builder("testSeries")
                 .Columns("value1", "value2")
                 .Values(DateTime.Now.Millisecond, 5)
                 .Build();
             InfluxDbApiResponse writeResponse = await _db.WriteAsync(dbName, TimeUnit.Milliseconds, serie);
-
+            Thread.Sleep(100);
             InfluxDbApiDeleteResponse deleteResponse = await _db.DeleteDatabaseAsync(dbName);
-
+            Thread.Sleep(100);
             createResponse.Success.Should().BeTrue();
             writeResponse.Success.Should().BeTrue();
             deleteResponse.Success.Should().BeTrue();
