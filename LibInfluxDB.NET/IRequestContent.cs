@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     internal interface IRequestContent
     {

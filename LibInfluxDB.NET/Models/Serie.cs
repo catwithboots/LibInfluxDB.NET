@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InfluxDB.Net.Models
+namespace LibInfluxDB.Net.Models
 {
     public class Serie
     {

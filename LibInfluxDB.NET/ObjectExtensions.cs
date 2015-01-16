@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     public static class ObjectExtensions
     {

@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibInfluxDB.NET", "LibInfluxDB.NET\LibInfluxDB.NET.csproj", "{9CBCDDAA-171F-4858-A917-368692A79068}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibInfluxDB.Net.Tests", "LibInfluxDB.Net.Tests\LibInfluxDB.Net.Tests.csproj", "{56B4EF11-8B2A-4862-8723-FC4368274768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{04E8582C-860F-47FB-A795-7A2610D01967}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +20,10 @@ Global
 		{9CBCDDAA-171F-4858-A917-368692A79068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CBCDDAA-171F-4858-A917-368692A79068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CBCDDAA-171F-4858-A917-368692A79068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B4EF11-8B2A-4862-8723-FC4368274768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B4EF11-8B2A-4862-8723-FC4368274768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B4EF11-8B2A-4862-8723-FC4368274768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B4EF11-8B2A-4862-8723-FC4368274768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using FluentAssertions;
-using InfluxDB.Net.Models;
+using LibInfluxDB.Net.Models;
 using NUnit.Framework;
 
-namespace InfluxDB.Net.Tests
+namespace LibInfluxDB.Net.Tests
 {
     public class InfluxDbTests : TestBase
     {
@@ -14,7 +14,7 @@ namespace InfluxDB.Net.Tests
 
         protected override void FinalizeSetUp()
         {
-            _db = new InfluxDb("http://localhost:8086", "root", "root");
+            _db = new InfluxDb("http://q0q.nl:8086", "root", "D1hwvK@rst!");
             EnsureInfluxDbStarted();
         }
 
@@ -51,6 +51,7 @@ namespace InfluxDB.Net.Tests
         private static string GetNewDbName()
         {
             return Guid.NewGuid().ToString("N").Substring(10);
+            //return "LibInfluxDB";
         }
 
         [Test]

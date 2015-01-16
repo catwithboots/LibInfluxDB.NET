@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace InfluxDB.Net.Tests.Extensions
+namespace LibInfluxDB.Net.Tests.Extensions
 {
     public static class AssertExtensions
     {

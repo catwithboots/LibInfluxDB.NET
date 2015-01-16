@@ -1,4 +1,4 @@
-namespace InfluxDB.Net.Models
+namespace LibInfluxDB.Net.Models
 {
     public class Pong
     {

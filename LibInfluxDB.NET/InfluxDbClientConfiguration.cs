@@ -1,7 +1,7 @@
 using System;
 using System.Net.Http;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     public class InfluxDbClientConfiguration
     {

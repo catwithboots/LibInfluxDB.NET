@@ -2,7 +2,7 @@
 using Moq.Language;
 using Moq.Language.Flow;
 
-namespace InfluxDB.Net.Tests.Extensions
+namespace LibInfluxDB.Net.Tests.Extensions
 {
     public static class MoqExtensions
     {

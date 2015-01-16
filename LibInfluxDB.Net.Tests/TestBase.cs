@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Ploeh.AutoFixture;
 
-namespace InfluxDB.Net.Tests
+namespace LibInfluxDB.Net.Tests
 {
     [TestFixture]
     public class TestBase

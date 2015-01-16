@@ -1,0 +1,1 @@
+C:\Users\kmeinster\Documents\GitHub\LibInfluxDB.NET\LibInfluxDB.Net.Tests\obj\Debug\InfluxDB.Net.Tests.csprojResolveAssemblyReference.cache

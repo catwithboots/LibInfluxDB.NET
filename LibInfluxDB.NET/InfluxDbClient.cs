@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using InfluxDB.Net.Models;
+using LibInfluxDB.Net.Models;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     internal class InfluxDbClient : IInfluxDbClient
     {

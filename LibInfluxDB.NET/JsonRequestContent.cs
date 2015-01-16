@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     internal class JsonRequestContent : IRequestContent
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace InfluxDB.Net.Models
+namespace LibInfluxDB.Net.Models
 {
     public class Shards
     {

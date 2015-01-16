@@ -1,4 +1,3 @@
-C:\Users\kmeinster\Documents\GitHub\LibInfluxDB.NET\LibInfluxDB.NET\obj\Debug\LibInfluxDB.NET.csprojResolveAssemblyReference.cache
 C:\Users\kmeinster\Documents\GitHub\LibInfluxDB.NET\LibInfluxDB.NET\bin\Debug\LibInfluxDB.NET.dll
 C:\Users\kmeinster\Documents\GitHub\LibInfluxDB.NET\LibInfluxDB.NET\bin\Debug\LibInfluxDB.NET.pdb
 C:\Users\kmeinster\Documents\GitHub\LibInfluxDB.NET\LibInfluxDB.NET\bin\Debug\Newtonsoft.Json.dll

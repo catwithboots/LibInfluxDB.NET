@@ -1,4 +1,4 @@
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     public enum LogLevel
     {

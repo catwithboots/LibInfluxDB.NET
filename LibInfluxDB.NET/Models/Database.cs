@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace InfluxDB.Net.Models
+namespace LibInfluxDB.Net.Models
 {
     public class Database
     {

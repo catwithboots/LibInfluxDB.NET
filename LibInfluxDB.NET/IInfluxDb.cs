@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using InfluxDB.Net.Models;
+using LibInfluxDB.Net.Models;
 
-namespace InfluxDB.Net
+namespace LibInfluxDB.Net
 {
     public interface IInfluxDb
     {
